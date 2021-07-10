@@ -1,0 +1,8 @@
+INDEX VERSION 1.131+C:\javaHomework\hafta1\.metadata\.plugins\org.eclipse.jdt.core
+736944062.index
+3751443064.index
+2084834379.index
+1702225601.index
+373274376.index
+1346138787.index
+1322099345.index

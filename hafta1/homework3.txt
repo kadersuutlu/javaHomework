@@ -1,0 +1,196 @@
+Hello World Uygulaması
+
+.java uzantısı java dosyası olduğunu belirtir. 
+Java'da programlar bir main class'ıyla ayakta tutulur.
+// Yorum satırlarıdır.Program bu satırları çalıştırmaz.
+System.out.println--->Bir satırlık kod yazılıp console'da ekrana bastırır.
+" " içerisine yazılan kodlar metinsel yani string'dir.
+intellisense : Programcıya kod yazarken yardımcı olur.(Akıllı kod tamamlama)
+Kod satırının bittiği noktalı virgül ile belirtilir.
+Açtığın şeyi kapat!!
+
+Değişkenler (Variables)
+
+camelCasing: Değişken isimlendirmede ilk kelimenin ilk harfi küçük diğer kelimelerin
+ilk harfi büyük yazılır.
+Don't repeat yourself->Kendini tekrar etme
+Case sensitive: Büyük-küçük harf duyarlı
+int ogrenciSayisi = 10 ;  
+int (integer) : tamsayı türünde 
+boolean: mantıksal durumlar tutulur. Şartlı ifadeler tutulur. Değeri true ya da false'dur.
+Sınır analizi: odaklanılacak yeri doğru tahmn edememe.
+ogrenciSayisi : değişkenin adıdırır. 
+Değişkenler tanımlanırken ilk kelimenin ilk harfi küçük, 
+diğer kelimelerin ilk harfi büyük yazılır.(camel casing)
+10 : değişkenin tuttuğu değerdir.
+System.out.println("Öğrenci sayım: " + ogrenciSayisi) ; --> metinsel toplama
+Output : Öğrenci sayım : 10
+reusability : tekrar tekrar kullanabilirlik
+code refactory : kod temizleme
+String : metinsel
+String mesaj = "Öğrenci"
+System.out.println(mesaj + ogrenciSayisi) ;
+
+Veri Tipleri (Data Types)
+
+Primitive Types : int(1byte) , char(2bytes) , boolean(1byte) , byte(1byte) , 
+short(2bytes) , long(8bytes) , float(4bytes) , double(8bytes)
+Referance Types : Class , Interface , Array
+
+İf blokları
+
+Blok başlangıç ve bitişinde noktalı virgül kullanılmaz.
+int sayi = 20 ;
+
+if (sayi < 20) {
+   //Sayı 20 den küçükse bu blok çalışır.
+   System.out.println("Sayi 20 den küçük") ;
+}
+else if (sayi==20) {
+   //şart sağlanmazsa burası çalışır.
+   System.out.println("Sayi 20 ye eşit") ;
+}
+else {
+   //Hiçbir şart sağlanmazsa burası çalışır.
+   System.out.println("Sayi 20 ye eşit veya 20 den küçük değil")
+}
+
+Defensive programming : Savunmacı program olabilecek tüm şartları 
+kontrol altına alır. Veri kaçaklarına izin vermez.
+
+Switch Blokları
+
+Duruma göre 
+char = '' -->charda tek tırnak kullanılır.
+
+switch(1){
+   case 1:
+       System.out.println("1");
+       break; --> Doğruysa döngüyü kır ve çık.
+   case 2:
+       System.out.println("2");
+       break;
+   case 2:
+       System.out.println("2");
+       break;
+       default: --> Üstteki hiçbir durum çalışmazsa burası çalışır.
+       System.out.println("Geçersiz");
+}
+
+Ctrl+Shift+Alt+l ---> Kodları editörün kod düzenine göre ayarlar.
+
+Döngüler
+İşlem bitene kadar tekrarlar.
+foreach döngüsü-> for(String kredi:krediler){}
+Döngüler programlarda birbirine benzeyen işlemleri tekrarlamaya yarar.
+for (başlangıç-start(sayaç tanımı) ; şart-condition ; kaçar artacak){
+	startcondition
+    //döngü şartı sağlandığı sürece çalışır.
+     System.out.println(i);
+}
+
+i++ --> i=i+1
+i-- --> i=i-1
+
+while(şart){ //şart sağlandığı sürece çalışır.
+   //belli bir şart sağlanana kadar döngü devam eder.
+}
+
+Bir değişken yalnızca çalıştığı blok içerisinde çalışır.
+
+infinite loop : sonsuz döngü
+sonsuz döngü manuel olarak durdurulmazsa hep çalışır.
+
+do{
+   //kodlar buraya yazılır.
+}while(şart){
+
+}
+do while'ın while'dan farkı şart sağlanmasa bile mutlaka bir kere çalışır.
+
+Diziler (Arrays)
+
+Ekranda liste şeklinde tekrarlayan veriler dizi içerisinde tutulur.
+Köşeli parantez: Belirtilen veri titpinde birden fazla veri olabilir anlamına gelir.
+
+
+tip güvenliği : type safety
+
+String [] ogrenciler = new String [3] ;
+ogrenciler[0]="Engin";
+ogrenciler[1]="Derin";
+ogrenciler[2]="Salih";
+
+double [] MyList = {1,2,3,4,5}
+
+ogrenciler.length : ogrenciler dizisinin uzunluğu
+
+for(String ogrenci:ogrenciler){ //foreach
+   //ogrenciler dizisindeki her ogrenciyi gez ve ogrenci değişkenine atar.
+
+}
+
+reverse engineering : tersine mühendislik (kodun okunurluğu)
+best practicks : işin doğru yapılma yöntemi
+refactoring : kodu iyileştirme
+
+System.out.println("Toplam = " + toplam) --> Metinsel toplama
+
+multidimensional : çok boyutlu dizi
+Genelde matrislerde kullanılır.
+
+String[][] sehirler = new String[3][3];
+sehirler[0][0]="İstanbul";
+sehirler[0][1]="Bursa";
+sehirler[0][1]="Bilecik";
+sehirler[1][0]="Ankara";
+sehirler[1][1]="Konya";
+sehirler[1][2]="Kayseri";
+sehirler[2][0]="Diyarbakır";
+sehirler[2][1]="Şanlıurfa";
+sehirler[2][2]="Gaziantep";
+
+nested loop : iç içe döngü
+
+for(int i=0 ; i<=2 ; i++){
+
+  for(int j=0 ; j<=2 ; j++){
+
+      System.out.println(sehirler[i][j];
+  }
+
+}
+
+String (Metin)
+
+Stringler bir karakterler dizisidir.
+
+String mesaj = "Hello World"
+
+mesaj.length() : mesajın karakter uzunluğu
+mesaj.charAt(index no) : aradığım indexteki karakter
+mesaj.concat("metin") : iki metni birleştirme
+mesaj.startsWith("B") : B ile mi başlıyor ->doğru ise true yanlış ise false
+mesaj.endsWith("B") : B ile mi bitiyor ->doğru ise true yanlış ise false
+
+case sensitive : büyük küçük harf duyarlı
+
+mesaj.getChars(srcBegin:0 ,srdEnd:5 , karakterler, dstBegin:0) : 0'dan 4'e kadar karakter ata 
+karakterler dizisine
+
+mesaj.indexOf('a') : Karakter kaçıncı indexte ilk bulduğu a'da durur.
+mesaj.lastIndexOf() : Aramaya sağdan başlar.
+
+mesaj.replace(old char , new char) : ilgili metindeki değerleri değiştir.
+
+Bu fonksiyonların çoğu sadece çıktı vermek için kullanılır. Metnin orjinal halini değiştirmez.
+
+mesaj.substring(begin,finish) : metnin istenilen parçasını alır.
+
+mesaj.Split(regex : ) : metni belli bir karakter ya da karakter dizisine göre parçalar.
+
+mesaj.toLowerCase() : Metnin tüm harflerini küçük harfe çevirir.
+mesaj.toUpperCase() : Metnin tüm harflerinin büyük harfe çevirir.
+mesaj.trim() : metnin başındaki ve sonundaki boşlukları temizler.
+
+bug : böcek uygulamadaki sistemsel , mantıksal hatalardır.

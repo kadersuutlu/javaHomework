@@ -1,0 +1,18 @@
+Java’da veri tipleri 3 gruba ayrılır.
+1-İlkel (Primitive) Veri Tipleri
+2-Referans Tipleri
+3-Null Tipi
+
+Bu tipler arasında ilk ikisi kendi aralarında alt gruplara ayrılır.
+
+1-İlkel Veri Tipleri
+-Tam sayılar:byte,short,integer,long
+-Ondalıklı Sayılar:float,double,char,boolean
+
+2-Referans Tipleri
+-Class
+-Interface
+-Array
+
+3-Null Tipi
+Null, herhangi bir değere sahip olmama durumuna verilen isimdir.

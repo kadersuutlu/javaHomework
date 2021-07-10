@@ -1,0 +1,4 @@
+1-Altın fiyatlarının artıp azalması durumu
+2-üye kayıt-giriş alanları
+3-Grafiklerin zamana göre değişimleri
+4-Yukarı çık ve sayfanın karanlık/açık mode seçimi

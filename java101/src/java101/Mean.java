@@ -7,9 +7,7 @@ public class Mean {
 	public static void main(String[] args) {
 		
 		int mat,fizik,kimya,biyoloji,edebiyat,müzik;
-		
 		int mean;
-		
 		Scanner scan=new Scanner(System.in);
 		
 		System.out.println("Mat notu: ");

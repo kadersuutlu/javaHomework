@@ -28,9 +28,6 @@ Scanner scan=new Scanner(System.in);
 			System.out.println("KDV'li Fiyat : "+KDVli);
 			System.out.println("KDV Tutari : "+KDVorani);
 		}
-		
-
-
 
 	}
 
